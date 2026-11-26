@@ -9,10 +9,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0F3A6E"
+            "backgroundColor": "#0A2C52"
           },
           "footer": {
-            "backgroundColor": "#F2F7F2"
+            "backgroundColor": "#F5F6F1"
           }
         },
         "body": {
@@ -24,7 +24,7 @@
               "text": "夫妻同心，用數據看見改變，陪你翻轉健康人生",
               "size": "xxs",
               "weight": "regular",
-              "color": "#9FB8D4",
+              "color": "#93A9C2",
               "wrap": false,
               "margin": "none",
               "align": "center",
@@ -33,7 +33,7 @@
           ],
           "spacing": "none",
           "paddingAll": "0px",
-          "backgroundColor": "#0F3A6E",
+          "backgroundColor": "#0A2C52",
           "height": "26px",
           "justifyContent": "center"
         },
@@ -46,7 +46,7 @@
               "text": "1 / 7",
               "size": "xxs",
               "weight": "regular",
-              "color": "#66766F",
+              "color": "#5C7391",
               "wrap": false,
               "margin": "none",
               "align": "center"
@@ -82,13 +82,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "LINE 諮詢",
@@ -122,13 +122,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "健康快篩",
@@ -162,13 +162,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "打電話",
@@ -209,13 +209,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "分享名片",
@@ -232,7 +232,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card1-8187dbb4.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card1-16d52858.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -248,10 +248,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0F3A6E"
+            "backgroundColor": "#0A2C52"
           },
           "footer": {
-            "backgroundColor": "#F2F7F2"
+            "backgroundColor": "#F5F6F1"
           }
         },
         "body": {
@@ -263,7 +263,7 @@
               "text": "想找回健康・健檢紅字・長期外食・照顧長輩・企業團體・健康事業",
               "size": "xxs",
               "weight": "regular",
-              "color": "#9FB8D4",
+              "color": "#93A9C2",
               "wrap": false,
               "margin": "none",
               "align": "center",
@@ -272,7 +272,7 @@
           ],
           "spacing": "none",
           "paddingAll": "0px",
-          "backgroundColor": "#0F3A6E",
+          "backgroundColor": "#0A2C52",
           "height": "26px",
           "justifyContent": "center"
         },
@@ -285,7 +285,7 @@
               "text": "2 / 7",
               "size": "xxs",
               "weight": "regular",
-              "color": "#66766F",
+              "color": "#5C7391",
               "wrap": false,
               "margin": "none",
               "align": "center"
@@ -321,13 +321,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "LINE 諮詢",
@@ -361,13 +361,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "健康快篩",
@@ -401,13 +401,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "打電話",
@@ -448,13 +448,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "分享名片",
@@ -471,7 +471,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card2-62e016ce.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card2-feffe735.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -487,10 +487,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0F3A6E"
+            "backgroundColor": "#0A2C52"
           },
           "footer": {
-            "backgroundColor": "#F2F7F2"
+            "backgroundColor": "#F5F6F1"
           }
         },
         "body": {
@@ -502,7 +502,7 @@
               "text": "非侵入快篩・個人化營養・含氫水植化素・夫妻一對一陪伴",
               "size": "xxs",
               "weight": "regular",
-              "color": "#9FB8D4",
+              "color": "#93A9C2",
               "wrap": false,
               "margin": "none",
               "align": "center",
@@ -511,7 +511,7 @@
           ],
           "spacing": "none",
           "paddingAll": "0px",
-          "backgroundColor": "#0F3A6E",
+          "backgroundColor": "#0A2C52",
           "height": "26px",
           "justifyContent": "center"
         },
@@ -524,7 +524,7 @@
               "text": "3 / 7",
               "size": "xxs",
               "weight": "regular",
-              "color": "#66766F",
+              "color": "#5C7391",
               "wrap": false,
               "margin": "none",
               "align": "center"
@@ -560,13 +560,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "LINE 諮詢",
@@ -600,13 +600,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "健康快篩",
@@ -640,13 +640,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "打電話",
@@ -687,13 +687,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "分享名片",
@@ -710,7 +710,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card3-4fafdafb.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card3-e43c06ac.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -726,10 +726,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0F3A6E"
+            "backgroundColor": "#0A2C52"
           },
           "footer": {
-            "backgroundColor": "#F2F7F2"
+            "backgroundColor": "#F5F6F1"
           }
         },
         "body": {
@@ -741,7 +741,7 @@
               "text": "13＋10 項評估・40 秒完成・全台到府服務",
               "size": "xxs",
               "weight": "regular",
-              "color": "#9FB8D4",
+              "color": "#93A9C2",
               "wrap": false,
               "margin": "none",
               "align": "center",
@@ -750,7 +750,7 @@
           ],
           "spacing": "none",
           "paddingAll": "0px",
-          "backgroundColor": "#0F3A6E",
+          "backgroundColor": "#0A2C52",
           "height": "26px",
           "justifyContent": "center"
         },
@@ -763,7 +763,7 @@
               "text": "4 / 7",
               "size": "xxs",
               "weight": "regular",
-              "color": "#66766F",
+              "color": "#5C7391",
               "wrap": false,
               "margin": "none",
               "align": "center"
@@ -799,13 +799,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "LINE 諮詢",
@@ -839,13 +839,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "健康快篩",
@@ -879,13 +879,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "打電話",
@@ -926,13 +926,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "分享名片",
@@ -949,7 +949,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card4-5f860bfa.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card4-a23c089a.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -965,10 +965,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0F3A6E"
+            "backgroundColor": "#0A2C52"
           },
           "footer": {
-            "backgroundColor": "#F2F7F2"
+            "backgroundColor": "#F5F6F1"
           }
         },
         "body": {
@@ -980,7 +980,7 @@
               "text": "健康不是買一個產品，而是把生活一件一件調整回來。",
               "size": "xxs",
               "weight": "regular",
-              "color": "#9FB8D4",
+              "color": "#93A9C2",
               "wrap": false,
               "margin": "none",
               "align": "center",
@@ -989,7 +989,7 @@
           ],
           "spacing": "none",
           "paddingAll": "0px",
-          "backgroundColor": "#0F3A6E",
+          "backgroundColor": "#0A2C52",
           "height": "26px",
           "justifyContent": "center"
         },
@@ -1002,7 +1002,7 @@
               "text": "5 / 7",
               "size": "xxs",
               "weight": "regular",
-              "color": "#66766F",
+              "color": "#5C7391",
               "wrap": false,
               "margin": "none",
               "align": "center"
@@ -1038,13 +1038,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "LINE 諮詢",
@@ -1078,13 +1078,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "健康快篩",
@@ -1118,13 +1118,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "打電話",
@@ -1165,13 +1165,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "分享名片",
@@ -1188,7 +1188,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card5-56a4ee85.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card5-7e6043d8.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -1204,10 +1204,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0F3A6E"
+            "backgroundColor": "#0A2C52"
           },
           "footer": {
-            "backgroundColor": "#F2F7F2"
+            "backgroundColor": "#F5F6F1"
           }
         },
         "body": {
@@ -1219,7 +1219,7 @@
               "text": "Life Renew 心煥營養團隊｜全台 6 個服務中心",
               "size": "xxs",
               "weight": "regular",
-              "color": "#9FB8D4",
+              "color": "#93A9C2",
               "wrap": false,
               "align": "center",
               "gravity": "center"
@@ -1227,7 +1227,7 @@
           ],
           "spacing": "none",
           "paddingAll": "0px",
-          "backgroundColor": "#0F3A6E",
+          "backgroundColor": "#0A2C52",
           "height": "26px",
           "justifyContent": "center"
         },
@@ -1240,7 +1240,7 @@
               "text": "6 / 7",
               "size": "xxs",
               "weight": "regular",
-              "color": "#66766F",
+              "color": "#5C7391",
               "wrap": false,
               "margin": "none",
               "align": "center"
@@ -1276,13 +1276,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "LINE 諮詢",
@@ -1316,13 +1316,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "健康快篩",
@@ -1356,13 +1356,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "打電話",
@@ -1403,13 +1403,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "分享名片",
@@ -1426,7 +1426,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card6-fc4bc08c.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card6-62bb38c0.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -1442,7 +1442,7 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#F2F7F2"
+            "backgroundColor": "#F5F6F1"
           },
           "footer": {
             "backgroundColor": "#FFFFFF"
@@ -1457,7 +1457,7 @@
               "text": "讓我們陪你走下一步",
               "size": "xl",
               "weight": "bold",
-              "color": "#0F3A6E",
+              "color": "#0A2C52",
               "wrap": true,
               "margin": "none"
             },
@@ -1466,7 +1466,7 @@
               "text": "想了解自己的身體數據，或想聊聊健康事業，都歡迎先聊聊",
               "size": "xs",
               "weight": "bold",
-              "color": "#3E7A1E",
+              "color": "#3A6B1F",
               "wrap": true,
               "margin": "xs"
             },
@@ -1483,7 +1483,7 @@
                       "text": "📞",
                       "size": "lg",
                       "weight": "regular",
-                      "color": "#7FC241",
+                      "color": "#6BAE3F",
                       "wrap": false,
                       "flex": 1
                     },
@@ -1504,7 +1504,7 @@
                 {
                   "type": "separator",
                   "margin": "lg",
-                  "color": "#42544E"
+                  "color": "#24456E"
                 },
                 {
                   "type": "box",
@@ -1515,7 +1515,7 @@
                       "text": "💬",
                       "size": "lg",
                       "weight": "regular",
-                      "color": "#7FC241",
+                      "color": "#6BAE3F",
                       "wrap": false,
                       "flex": 1
                     },
@@ -1536,7 +1536,7 @@
                 {
                   "type": "separator",
                   "margin": "lg",
-                  "color": "#42544E"
+                  "color": "#24456E"
                 },
                 {
                   "type": "box",
@@ -1547,7 +1547,7 @@
                       "text": "✉️",
                       "size": "lg",
                       "weight": "regular",
-                      "color": "#7FC241",
+                      "color": "#6BAE3F",
                       "wrap": false,
                       "flex": 1
                     },
@@ -1568,7 +1568,7 @@
                 {
                   "type": "separator",
                   "margin": "lg",
-                  "color": "#42544E"
+                  "color": "#24456E"
                 },
                 {
                   "type": "box",
@@ -1579,7 +1579,7 @@
                       "text": "📍",
                       "size": "lg",
                       "weight": "regular",
-                      "color": "#7FC241",
+                      "color": "#6BAE3F",
                       "wrap": false,
                       "flex": 1
                     },
@@ -1600,7 +1600,7 @@
                 {
                   "type": "separator",
                   "margin": "lg",
-                  "color": "#42544E"
+                  "color": "#24456E"
                 },
                 {
                   "type": "box",
@@ -1611,7 +1611,7 @@
                       "text": "🏢",
                       "size": "lg",
                       "weight": "regular",
-                      "color": "#7FC241",
+                      "color": "#6BAE3F",
                       "wrap": false,
                       "flex": 1
                     },
@@ -1632,7 +1632,7 @@
                 {
                   "type": "separator",
                   "margin": "lg",
-                  "color": "#42544E"
+                  "color": "#24456E"
                 },
                 {
                   "type": "box",
@@ -1643,7 +1643,7 @@
                       "text": "🌐",
                       "size": "lg",
                       "weight": "regular",
-                      "color": "#7FC241",
+                      "color": "#6BAE3F",
                       "wrap": false,
                       "flex": 1
                     },
@@ -1664,7 +1664,7 @@
                 {
                   "type": "separator",
                   "margin": "lg",
-                  "color": "#42544E"
+                  "color": "#24456E"
                 },
                 {
                   "type": "box",
@@ -1675,7 +1675,7 @@
                       "text": "📸",
                       "size": "lg",
                       "weight": "regular",
-                      "color": "#7FC241",
+                      "color": "#6BAE3F",
                       "wrap": false,
                       "flex": 1
                     },
@@ -1697,7 +1697,7 @@
               "spacing": "none",
               "margin": "md",
               "paddingAll": "14px",
-              "backgroundColor": "#0F3A6E",
+              "backgroundColor": "#0A2C52",
               "cornerRadius": "20px"
             },
             {
@@ -1731,13 +1731,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "導航到門市",
@@ -1751,7 +1751,7 @@
           ],
           "spacing": "lg",
           "paddingAll": "16px",
-          "backgroundColor": "#F2F7F2"
+          "backgroundColor": "#F5F6F1"
         },
         "footer": {
           "type": "box",
@@ -1762,7 +1762,7 @@
               "text": "7 / 7",
               "size": "xxs",
               "weight": "regular",
-              "color": "#66766F",
+              "color": "#5C7391",
               "wrap": false,
               "margin": "none",
               "align": "center"
@@ -1798,13 +1798,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "LINE 諮詢",
@@ -1838,13 +1838,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "健康快篩",
@@ -1878,13 +1878,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#355A85",
-                    "endColor": "#0C2D56"
+                    "startColor": "#314E6E",
+                    "endColor": "#082240"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#4D6D94",
+                  "borderColor": "#4A637F",
                   "action": {
                     "type": "uri",
                     "label": "打電話",
@@ -1925,13 +1925,13 @@
                   "background": {
                     "type": "linearGradient",
                     "angle": "90deg",
-                    "startColor": "#4074AF",
-                    "endColor": "#16467D"
+                    "startColor": "#3C6DA1",
+                    "endColor": "#123F70"
                   },
                   "cornerRadius": "100px",
                   "flex": 1,
                   "borderWidth": "1px",
-                  "borderColor": "#5785B9",
+                  "borderColor": "#537EAC",
                   "action": {
                     "type": "uri",
                     "label": "分享名片",
