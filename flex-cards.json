@@ -248,10 +248,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0A2C52"
+            "backgroundColor": "#F5F6F1"
           },
           "footer": {
-            "backgroundColor": "#F5F6F1"
+            "backgroundColor": "#FFFFFF"
           }
         },
         "body": {
@@ -263,7 +263,7 @@
               "text": "想找回健康・健檢紅字・長期外食・照顧長輩・企業團體・健康事業",
               "size": "xxs",
               "weight": "regular",
-              "color": "#93A9C2",
+              "color": "#5A6E8A",
               "wrap": false,
               "margin": "none",
               "align": "center",
@@ -471,7 +471,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card2-feffe735.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card2-a47ec6ed.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -487,10 +487,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0A2C52"
+            "backgroundColor": "#F5F6F1"
           },
           "footer": {
-            "backgroundColor": "#F5F6F1"
+            "backgroundColor": "#FFFFFF"
           }
         },
         "body": {
@@ -502,7 +502,7 @@
               "text": "非侵入快篩・個人化營養・含氫水植化素・夫妻一對一陪伴",
               "size": "xxs",
               "weight": "regular",
-              "color": "#93A9C2",
+              "color": "#5A6E8A",
               "wrap": false,
               "margin": "none",
               "align": "center",
@@ -710,7 +710,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card3-e43c06ac.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card3-b0394661.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -726,10 +726,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0A2C52"
+            "backgroundColor": "#F5F6F1"
           },
           "footer": {
-            "backgroundColor": "#F5F6F1"
+            "backgroundColor": "#FFFFFF"
           }
         },
         "body": {
@@ -741,7 +741,7 @@
               "text": "13＋10 項評估・40 秒完成・全台到府服務",
               "size": "xxs",
               "weight": "regular",
-              "color": "#93A9C2",
+              "color": "#5A6E8A",
               "wrap": false,
               "margin": "none",
               "align": "center",
@@ -949,7 +949,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card4-a23c089a.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card4-fb446b42.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -965,10 +965,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0A2C52"
+            "backgroundColor": "#F5F6F1"
           },
           "footer": {
-            "backgroundColor": "#F5F6F1"
+            "backgroundColor": "#FFFFFF"
           }
         },
         "body": {
@@ -980,7 +980,7 @@
               "text": "健康不是買一個產品，而是把生活一件一件調整回來。",
               "size": "xxs",
               "weight": "regular",
-              "color": "#93A9C2",
+              "color": "#5A6E8A",
               "wrap": false,
               "margin": "none",
               "align": "center",
@@ -1188,7 +1188,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card5-7e6043d8.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card5-828fc29c.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
@@ -1204,10 +1204,10 @@
         "size": "mega",
         "styles": {
           "body": {
-            "backgroundColor": "#0A2C52"
+            "backgroundColor": "#F5F6F1"
           },
           "footer": {
-            "backgroundColor": "#F5F6F1"
+            "backgroundColor": "#FFFFFF"
           }
         },
         "body": {
@@ -1219,7 +1219,7 @@
               "text": "Life Renew 心煥營養團隊｜全台 6 個服務中心",
               "size": "xxs",
               "weight": "regular",
-              "color": "#93A9C2",
+              "color": "#5A6E8A",
               "wrap": false,
               "align": "center",
               "gravity": "center"
@@ -1227,7 +1227,7 @@
           ],
           "spacing": "none",
           "paddingAll": "0px",
-          "backgroundColor": "#0A2C52",
+          "backgroundColor": "#F5F6F1",
           "height": "26px",
           "justifyContent": "center"
         },
@@ -1426,7 +1426,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card6-62bb38c0.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card6-e6b101c4.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
