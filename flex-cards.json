@@ -21,7 +21,7 @@
           "contents": [
             {
               "type": "text",
-              "text": "夫妻同心，用數據看見改變，陪你翻轉健康人生",
+              "text": "夫妻同心，陪你翻轉健康人生",
               "size": "xxs",
               "weight": "regular",
               "color": "#93A9C2",
@@ -260,7 +260,7 @@
           "contents": [
             {
               "type": "text",
-              "text": "想找回健康・健檢紅字・長期外食・照顧長輩・企業團體・健康事業",
+              "text": "想找回健康・健檢見紅字",
               "size": "xxs",
               "weight": "regular",
               "color": "#5A6E8A",
@@ -499,7 +499,7 @@
           "contents": [
             {
               "type": "text",
-              "text": "非侵入快篩・個人化營養・含氫水植化素・夫妻一對一陪伴",
+              "text": "非侵入快篩・個人化營養",
               "size": "xxs",
               "weight": "regular",
               "color": "#5A6E8A",
@@ -738,7 +738,7 @@
           "contents": [
             {
               "type": "text",
-              "text": "13＋10 項評估・40 秒完成・全台到府服務",
+              "text": "13＋10 項評估・40 秒檢測",
               "size": "xxs",
               "weight": "regular",
               "color": "#5A6E8A",
@@ -977,7 +977,7 @@
           "contents": [
             {
               "type": "text",
-              "text": "健康不是買一個產品，而是把生活一件一件調整回來。",
+              "text": "健康不是買產品，是調整生活",
               "size": "xxs",
               "weight": "regular",
               "color": "#5A6E8A",
@@ -1216,7 +1216,7 @@
           "contents": [
             {
               "type": "text",
-              "text": "Life Renew 心煥營養團隊｜全台 6 個服務中心",
+              "text": "Life Renew 心煥營養團隊",
               "size": "xxs",
               "weight": "regular",
               "color": "#5A6E8A",
@@ -1426,7 +1426,7 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card6-48aa9bee.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card6-832050d8.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
