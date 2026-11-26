@@ -6,6 +6,9 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>游輝岳 × 高瑜均｜環貫綠佳利 Naturally Plus 健康顧問（非侵入健康快篩）</title>
 <meta name="description" content="非侵入健康快篩 40 秒完成、13 項身體特性＋10 項器官評分，依數據提供個人化營養方案。環貫綠佳利 Naturally Plus 健康顧問｜游輝岳 × 高瑜均｜全台到府檢測｜0917-216-627">
@@ -31,6 +34,13 @@
     --radius:20px;
     /* TODO C: 官網 / LINE / IG / FB 連結集中在頁面最下方 JS 的 LINKS 物件，改那裡就好 */
   }
+  /* ── 襯線 display（本案專屬；接客戶官網的 Noto Serif TC 血統） ──
+     只用在標題／姓名／標語；正文維持黑體，避免行寬被壓縮而折行。 */
+  :root{ --serif:"Noto Serif TC","Source Han Serif TC","Songti TC","PingFang TC","Microsoft JhengHei",PMingLiU,serif; }
+  .name,.slogan,.slogan .big,.slogan .big.q,.sec-title,.about .q,.hero .logo,.card h3,.mk-card h4{font-family:var(--serif)}
+  .name,.slogan .big,.sec-title{letter-spacing:.06em}
+  /* 網站與 Flex 卡片共用同一套 img/icon-*.png（emoji 每台裝置長得不一樣，也是 AI 感來源） */
+  .actions .btn .ic img,.dock .btn .ic img{width:19px;height:19px;display:block}
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;padding:0}
   body{
@@ -45,7 +55,7 @@
   /* 主視覺底：真照片（客戶官網實拍，模糊壓暗）＋ 品牌深藍漸層疊在上面，
      漸層的 alpha 是為了讓白字與 logo 讀得出來 —— 換背景圖時這個 alpha 要重新調。 */
   .hero{position:relative;
-        background-image:linear-gradient(160deg,rgba(10,40,78,.70) 0%,rgba(10,42,80,.38) 52%,rgba(10,42,80,.62) 100%),
+        background-image:linear-gradient(160deg,rgba(10,40,78,.70) 0%,rgba(20,38,34,.38) 52%,rgba(20,38,34,.62) 100%),
                          url("hero-bg-567b5839.jpg");
         background-size:cover,cover;
         background-position:center top,72% 32%;
@@ -57,7 +67,7 @@
   .logo{font-size:17px;font-weight:800;letter-spacing:.30em;color:#fff}
   .logo small{display:block;font-size:11px;font-weight:600;letter-spacing:.34em;color:var(--gold);margin-top:4px}
   .portrait{width:clamp(150px,44vw,184px);height:clamp(150px,44vw,184px);margin:16px auto 12px;border-radius:50%;object-fit:cover;
-        border:2px solid rgba(255,255,255,.85);box-shadow:0 10px 26px rgba(0,0,0,.38);background:#12406F;display:block}
+        border:2px solid rgba(255,255,255,.85);box-shadow:0 10px 26px rgba(0,0,0,.38);background:#0E3059;display:block}
   .portrait-ph{width:clamp(150px,44vw,184px);height:clamp(150px,44vw,184px);margin:16px auto 12px;border-radius:50%;
         display:flex;align-items:center;justify-content:center;font-size:13px;letter-spacing:.2em;
         border:2px dashed rgba(255,255,255,.45);color:rgba(255,255,255,.6);background:rgba(255,255,255,.06)}
@@ -69,29 +79,31 @@
        border-color:rgba(255,255,255,.34);
        box-shadow:0 4px 0 rgba(6,28,54,.65), 0 8px 16px rgba(0,0,0,.24),
                   inset 0 1px 0 rgba(255,255,255,.34)}
-  .slogan{margin:12px auto 0;max-width:340px;font-size:17px;line-height:1.7;font-weight:600;color:#F3EDE1}
+  .slogan{margin:12px auto 0;max-width:340px;font-size:17px;line-height:1.7;font-weight:600;color:#EFF4FA}
   .slogan i{display:block;font-style:normal;font-size:15px;color:var(--gold-2);letter-spacing:.2em}
   .slogan .big{font-size:21px;display:block}
 
   .tags{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:16px 0 0}
   .tag{font-size:12.5px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.10);
-       border:1px solid rgba(255,255,255,.20);color:#EDE6D6;letter-spacing:.04em}
+       border:1px solid rgba(255,255,255,.20);color:#EBF1F7;letter-spacing:.04em}
   .trust{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:10px 0 0}
   .trust span{font-size:11.5px;font-weight:700;color:#CBE4F5;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:4px 11px;white-space:nowrap}
   .slogan .big.q{font-size:17px;line-height:1.75;font-weight:700}
-.about{margin:0 16px 12px;font-size:14px;line-height:1.85;color:#1E4A7E;background:#fff;border:1px solid rgba(8,36,68,.10);border-radius:14px;padding:14px 16px}
+.about{margin:0 16px 12px;font-size:14px;line-height:1.85;color:#1B4676;background:#fff;border:1px solid rgba(15,58,110,.10);border-radius:14px;padding:14px 16px}
 .media{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 16px 18px}
-.mcard{display:flex;flex-direction:column;background:#fff;border:1px solid rgba(8,36,68,.10);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit}
+.mcard{display:flex;flex-direction:column;background:#fff;border:1px solid rgba(15,58,110,.10);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit}
 .mcard img{width:100%;height:150px;object-fit:cover;object-position:top;display:block}
 .mcard .mb{padding:10px 12px 12px}
 .mcard .mt{display:inline-block;font-size:11px;font-weight:800;color:var(--brown);letter-spacing:.06em;margin-bottom:4px}
-.mcard p{margin:0;font-size:13px;line-height:1.6;color:#1E4A7E}
+.mcard p{margin:0;font-size:13px;line-height:1.6;color:#1B4676}
 .mcard:not(.mimg){justify-content:center}
 .creds{list-style:none;padding:0;margin:0}
-  .creds li{display:flex;gap:10px;font-size:13.5px;color:#1E4A7E;padding:5px 0;border-bottom:1px dashed rgba(8,36,68,.10)}
+  .creds li{display:flex;gap:10px;font-size:13.5px;color:#1B4676;padding:5px 0;border-bottom:1px dashed rgba(15,58,110,.10)}
   .creds li{gap:8px}
-  .creds li b{color:var(--brown);flex:0 0 116px;white-space:nowrap;font-size:11.5px;letter-spacing:-.02em;line-height:1.9;font-weight:800}
-  .creds li span{white-space:nowrap}
+  .creds li b{color:var(--brown);flex:0 0 72px;white-space:nowrap;font-size:11.5px;letter-spacing:-.02em;line-height:1.9;font-weight:800}
+  /* ⚠️ 這裡原本是 white-space:nowrap → 公司全名＋職稱一長就頂出卡片右緣（實測「受眾 25 萬+」被切掉）。
+     職稱類文字本來就該換行，不要用 nowrap。 */
+  .creds li span{flex:1 1 auto;min-width:0;white-space:normal;overflow-wrap:anywhere}
   .gear{margin:10px 0 0;font-size:12.5px;color:#4A6484;line-height:1.7}
 
   .actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-top:20px}
@@ -109,7 +121,7 @@
        box-shadow:0 1px 0 rgba(6,28,54,.5), 0 3px 8px rgba(0,0,0,.18),
                   inset 0 1px 0 rgba(255,255,255,.14);
        filter:brightness(1.08)}
-  .btn .ic{font-size:18px;line-height:1}
+  .btn .ic{font-size:19px;line-height:1}   /* emoji 圖示（例：📱）要跟 19px 的圖片圖示同高 */
   /* 社群官方 logo（inline SVG）：跟 emoji 圖示同高，置中 */
   .btn .ic svg{width:20px;height:20px;display:block}
   /* Google Maps 是水滴形，視覺重量比方形 logo 輕，單獨放大補償 */
@@ -129,7 +141,7 @@
   .rail-arrow{position:absolute;top:0;z-index:2;width:40px;height:40px;padding:0 0 3px;
     border:1px solid rgba(62,122,30,.55);border-radius:50%;background:rgba(242,247,242,.82);color:var(--navy);
     font-size:26px;line-height:1;font-family:inherit;display:flex;align-items:center;justify-content:center;cursor:pointer;
-    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);box-shadow:0 2px 8px rgba(8,36,68,.18);
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);box-shadow:0 2px 8px rgba(15,58,110,.18);
     -webkit-tap-highlight-color:transparent;transition:opacity .2s,background .2s,top .25s ease}
   .rail-arrow.prev{left:2px}
   .rail-arrow.next{right:2px}
@@ -138,21 +150,21 @@
   .rail-arrow:disabled{opacity:.38;border-color:rgba(62,122,30,.4);cursor:default;box-shadow:none}
   .rail-arrow[hidden]{display:none}
   .card{flex:0 0 86%;scroll-snap-align:center;background:#fff;border-radius:var(--radius);
-        padding:18px 16px;box-shadow:0 6px 22px rgba(8,36,68,.10);border:1px solid rgba(8,36,68,.06)}
+        padding:18px 16px;box-shadow:0 6px 22px rgba(15,58,110,.10);border:1px solid rgba(15,58,110,.06)}
   .card h3{margin:0 0 4px;font-size:19px;color:var(--navy);letter-spacing:.02em;line-height:1.5}
   .card h3 em{font-style:normal;color:var(--brown)}
   .card .sub{margin:0 0 14px;font-size:13.5px;color:var(--muted)}
-  .card p{margin:0 0 10px;font-size:15px;line-height:1.75;color:#1E4A7E}
+  .card p{margin:0 0 10px;font-size:15px;line-height:1.75;color:#1B4676}
 
   .grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 4px}
-  .grid6 div{background:#EFF5EF;border:1px solid rgba(8,36,68,.08);border-radius:12px;
+  .grid6 div{background:#EFF5EF;border:1px solid rgba(15,58,110,.08);border-radius:12px;
              padding:10px 4px;text-align:center;font-size:13px;font-weight:700;color:var(--navy)}
   .grid6 div span{display:block;font-size:16px;margin-bottom:3px}
 
-  .box{background:#F6FAF6;border:1px dashed rgba(8,36,68,.18);border-radius:14px;padding:14px;margin-top:12px}
+  .box{background:#F4F8F4;border:1px dashed rgba(15,58,110,.18);border-radius:14px;padding:14px;margin-top:12px}
   .box .bt{font-size:12.5px;font-weight:800;color:var(--brown-text);letter-spacing:.1em;margin-bottom:8px;text-align:center}
   .box ul{margin:0;padding:0;list-style:none}
-  .box li{position:relative;padding-left:22px;font-size:14.5px;color:#1E4A7E;margin-bottom:8px}
+  .box li{position:relative;padding-left:22px;font-size:14.5px;color:#1B4676;margin-bottom:8px}
   .box li:last-child{margin-bottom:0}
   .box li::before{content:"✓";position:absolute;left:0;top:0;color:var(--brown);font-weight:800}
   .box.warn li::before{content:"✕";color:var(--red)}
@@ -160,13 +172,13 @@
         font-size:13.5px;text-align:center;font-weight:700;letter-spacing:.03em}
 
   /* 三大服務 */
-  .svc{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px dashed rgba(8,36,68,.12)}
+  .svc{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px dashed rgba(15,58,110,.12)}
   .svc:last-child{border-bottom:0;padding-bottom:12px}
   .svc .ico{flex:0 0 40px;height:40px;border-radius:12px;background:#EFF5EF;display:flex;
             align-items:center;justify-content:center;font-size:19px}
   .svc h4{margin:0 0 2px;font-size:16px;color:var(--navy)}
   .svc .tagsm{font-size:12px;color:var(--brown-text);font-weight:700;letter-spacing:.06em;margin-bottom:4px}
-  .svc p{margin:0;font-size:14px;color:#2A5F96;line-height:1.7}
+  .svc p{margin:0;font-size:14px;color:#26527F;line-height:1.7}
 
   /* 數據 */
   .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:4px 0 14px}
@@ -174,26 +186,26 @@
   .stats b{display:block;font-size:23px;color:var(--gold-2);letter-spacing:.02em;line-height:1.3}
   .stats span{font-size:12px;color:#D2E5CC;letter-spacing:.02em}
   .steps{list-style:none;margin:0;padding:0;counter-reset:s}
-  .steps li{position:relative;padding:9px 0 9px 46px;border-bottom:1px dashed rgba(8,36,68,.10);font-size:14px;color:#1E4A7E}
+  .steps li{position:relative;padding:9px 0 9px 46px;border-bottom:1px dashed rgba(15,58,110,.10);font-size:14px;color:#1B4676}
   .steps li:last-child{border-bottom:0}
   .steps li::before{counter-increment:s;content:"0" counter(s);position:absolute;left:0;top:9px;
-        font-size:13px;font-weight:800;color:#fff;background:#2E7D3E;border-radius:8px;padding:3px 7px}
+        font-size:13px;font-weight:800;color:#fff;background:#1C5AA0;border-radius:8px;padding:3px 7px}
   .steps b{color:var(--navy)}
 
   /* 2x2 工藝 */
   .craft{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}
-  .craft figure{margin:0;background:#F6FAF6;border-radius:14px;overflow:hidden;border:1px solid rgba(8,36,68,.07)}
-  .craft .ph{aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#EAF0F7,#EAF0F7 8px,#F4F8F4 8px,#F4F8F4 16px);
+  .craft figure{margin:0;background:#F4F8F4;border-radius:14px;overflow:hidden;border:1px solid rgba(15,58,110,.07)}
+  .craft .ph{aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#EBF1F9,#EBF1F9 8px,#F2F7F2 8px,#F2F7F2 16px);
              display:flex;align-items:center;justify-content:center;font-size:11px;color:#8FA8C4;letter-spacing:.1em}
   .craft img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
   .craft figcaption{padding:9px 9px 11px}
   .craft h4{margin:0 0 3px;font-size:14.5px;color:var(--navy)}
-  .craft p{margin:0;font-size:12.5px;color:#3A6A9A;line-height:1.65}
+  .craft p{margin:0;font-size:12.5px;color:#5A6E8A;line-height:1.65}
 
   /* 作品牆 */
   /* 3 欄 × 4 列＝12 格：第一張 2×2 佔 4 格 + 其餘 8 張各 1 格 */
   .wall{display:grid;grid-template-columns:repeat(3,1fr);margin:6px 20px 0;padding:0;gap:4px;background:none;box-shadow:none}
-  .wall figure{margin:0;border-radius:8px;overflow:hidden;background:#F6FAF6;border:1px solid rgba(8,36,68,.07);
+  .wall figure{margin:0;border-radius:8px;overflow:hidden;background:#F4F8F4;border:1px solid rgba(15,58,110,.07);
                transition:transform .12s ease-out}
   .wall figure.is-pressed{transform:scale(.96)}
   .wall figure:first-child{grid-column:span 2;grid-row:span 2;position:relative}
@@ -206,18 +218,18 @@
   .wall-head span{color:#4A6484;font-size:12.5px}
   .wall-head em{margin-left:auto;font-style:normal;color:var(--muted);font-size:11.5px;letter-spacing:.06em}
   .wall img,.craft img{cursor:zoom-in}
-  .wall .ph{aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#EAF0F7,#EAF0F7 8px,#F4F8F4 8px,#F4F8F4 16px);
+  .wall .ph{aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#EBF1F9,#EBF1F9 8px,#F2F7F2 8px,#F2F7F2 16px);
             display:flex;align-items:center;justify-content:center;font-size:10px;color:#8FA8C4;letter-spacing:.1em}
 
   /* Google 評論 */
-  .rev{display:flex;gap:11px;padding:12px 0;border-bottom:1px dashed rgba(8,36,68,.12)}
+  .rev{display:flex;gap:11px;padding:12px 0;border-bottom:1px dashed rgba(15,58,110,.12)}
   .rev:last-of-type{border-bottom:0}
-  .rev .pic{flex:0 0 74px;width:74px;height:74px;border-radius:10px;overflow:hidden;background:#EAF0F7}
+  .rev .pic{flex:0 0 74px;width:74px;height:74px;border-radius:10px;overflow:hidden;background:#EBF1F9}
   .rev .pic img{width:100%;height:100%;object-fit:cover;display:block}
   .rev .pic.ph{display:flex;align-items:center;justify-content:center;font-size:10px;color:#8FA8C4;text-align:center;padding:4px}
   .rev .who{font-size:13px;font-weight:800;color:var(--navy)}
   .rev .stars{color:#E8A33D;font-size:12px;letter-spacing:.08em}
-  .rev .txt{font-size:13px;color:#2A5F96;line-height:1.65;margin:3px 0 0}
+  .rev .txt{font-size:13px;color:#26527F;line-height:1.65;margin:3px 0 0}
 
   .count{text-align:center;font-size:12px;color:var(--muted);margin:-4px 0 0;letter-spacing:.06em}
   .count b{color:var(--navy)}
@@ -228,6 +240,15 @@
         background:rgba(15,58,110,.2);background-clip:content-box;cursor:pointer;
         -webkit-tap-highlight-color:transparent;transition:width .2s,background-color .2s}
   .count.is-dots i.on{width:18px;background-color:var(--brown)}
+  /* 滑動提示（同 jerry）：sticky 黏在頂部分享列下方，只在 .rail-sec 範圍內；
+     到最後一張時 JS 加 .is-end 改字並停掉箭頭動畫 */
+  .rail-hint{position:sticky;top:46px;z-index:20;margin:0;padding:5px 20px;text-align:center;
+        font-size:14px;font-weight:700;line-height:1.5;color:var(--navy);letter-spacing:.06em;background:var(--paper)}
+  .rail-hint .arr{display:inline-block;color:var(--navy)}
+  .rail-hint .arr[hidden]{display:none}
+  .rail-hint:not(.is-end) .arr.r{animation:nudge 1.6s ease-in-out infinite}
+  @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
+  @media (prefers-reduced-motion:reduce){ .rail-hint .arr.r{animation:none !important} }
 
   /* 圖片淡入：只有 JS 加上 html.has-js 後才會隱藏，JS 沒跑圖片永遠可見 */
   html.has-js img{transition:opacity .25s}
@@ -251,22 +272,24 @@
 
   /* 作品／工藝圖放大 */
   #lightbox{position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;display:flex;align-items:center;justify-content:center;
-        padding:16px;background:rgba(6,24,46,.92);cursor:zoom-out;-webkit-tap-highlight-color:transparent}
+        padding:16px;background:rgba(6,28,54,.92);cursor:zoom-out;-webkit-tap-highlight-color:transparent}
   #lightbox[hidden]{display:none}
   #lightbox img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px}
   /* 放大檢視的左右切換（作品牆／施工項目圖共用同一組控制項） */
+  /* ⚠️ 不要用 backdrop-filter：它會取樣「底下那張圖」來模糊，切換照片時行動版瀏覽器
+     常常不重繪，按鈕上就會殘留上一張照片的顏色。改用純半透明底，效果一樣、不會殘影。 */
   #lightbox .lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;padding:0;border:0;
-        border-radius:50%;background:rgba(255,255,255,.16);color:#fff;font-size:26px;line-height:1;cursor:pointer;
+        border-radius:50%;background:rgba(8,30,58,.46);color:#fff;font-size:26px;line-height:1;cursor:pointer;
         display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;
-        -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
-  #lightbox .lb-nav:hover{background:rgba(255,255,255,.30)}
+        box-shadow:0 2px 10px rgba(0,0,0,.28)}
+  #lightbox .lb-nav:hover{background:rgba(8,30,58,.68)}
   #lightbox .lb-nav[hidden]{display:none}
   #lightbox .lb-prev{left:10px}
   #lightbox .lb-next{right:10px}
   #lightbox .lb-close{position:absolute;top:12px;right:12px;width:42px;height:42px;padding:0;border:0;border-radius:50%;
-        background:rgba(255,255,255,.16);color:#fff;font-size:17px;line-height:1;cursor:pointer;
+        background:rgba(8,30,58,.46);color:#fff;font-size:17px;line-height:1;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.28);
         display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent}
-  #lightbox .lb-close:hover{background:rgba(255,255,255,.30)}
+  #lightbox .lb-close:hover{background:rgba(8,30,58,.68)}
   #lightbox .lb-count{position:absolute;top:22px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;
         letter-spacing:.1em;font-variant-numeric:tabular-nums;opacity:.8;pointer-events:none}
   #lightbox .lb-count[hidden]{display:none}
@@ -274,10 +297,10 @@
 
   /* 門市資訊 */
   .info{margin:6px 20px 0;background:#fff;border-radius:var(--radius);padding:16px;
-        box-shadow:0 6px 22px rgba(8,36,68,.08);border:1px solid rgba(8,36,68,.06)}
+        box-shadow:0 6px 22px rgba(15,58,110,.08);border:1px solid rgba(15,58,110,.06)}
   /* 卡片裡的聯絡資訊：不再自成一張白卡（避免卡片包卡片），改用內距＋分隔線 */
   .info.flat{margin:14px 0 0;padding:0 12px;border:0;box-shadow:none;background:none;border-radius:0}
-  .info .row{display:flex;gap:10px;padding:12px 0;border-bottom:1px dashed rgba(8,36,68,.10);font-size:14.5px}
+  .info .row{display:flex;gap:10px;padding:12px 0;border-bottom:1px dashed rgba(15,58,110,.10);font-size:14.5px}
   .info .row:last-child{border-bottom:0}
   .info .k{flex:0 0 68px;color:var(--muted);font-size:12.5px;padding-top:3px;letter-spacing:.06em}
   .info a{display:inline-block;padding:6px 0;color:var(--navy);text-decoration:underline;
@@ -289,12 +312,12 @@
 
   /* 置頂分享列：滑到哪裡都按得到 */
   .topbar{position:sticky;top:0;z-index:30;padding:8px 16px 6px;
-          background:linear-gradient(180deg,var(--paper) 70%,rgba(244,248,244,.85) 100%)}
+          background:linear-gradient(180deg,var(--paper) 70%,rgba(247,241,232,.85) 100%)}
   /* 次要樣式：白底＋細外框＋深藍字，主角讓給底部 .dock 的 LINE／電話 */
   .topbar button{width:100%;padding:7px 10px;border:1px solid rgba(15,58,110,.28);border-radius:12px;
           background:#fff;color:var(--navy);
           font-size:13px;font-weight:700;font-family:inherit;letter-spacing:.06em;
-          box-shadow:0 1px 2px rgba(8,36,68,.08);
+          box-shadow:0 1px 2px rgba(15,58,110,.08);
           transform:translateY(0);
           transition:transform .07s ease, box-shadow .07s ease, filter .12s ease}
   .topbar button:active,.topbar button.is-pressed{
@@ -330,12 +353,12 @@
   .share{margin:18px 20px 0}
   .share button{width:100%;padding:16px;border:0;border-radius:14px;background:var(--navy);color:#fff;
         font-size:15px;font-weight:800;font-family:inherit;letter-spacing:.06em;
-        box-shadow:0 5px 0 #061C36, 0 10px 18px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.22);
+        box-shadow:0 5px 0 #071E3B, 0 10px 18px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.22);
         transform:translateY(0);
         transition:transform .07s ease, box-shadow .07s ease, filter .12s ease}
   .share button:active,.share button.is-pressed{
         transform:translateY(4px);filter:brightness(1.08);
-        box-shadow:0 1px 0 #061C36, 0 4px 10px rgba(0,0,0,.20), inset 0 1px 0 rgba(255,255,255,.16)}
+        box-shadow:0 1px 0 #071E3B, 0 4px 10px rgba(0,0,0,.20), inset 0 1px 0 rgba(255,255,255,.16)}
   .tip{font-size:12px;color:var(--muted);text-align:center;margin:10px 20px 0;line-height:1.75}
   #diag{display:none;margin:14px 20px 0;padding:12px 14px;border-radius:12px;background:#061A32;
         color:#8FE3B0;font:12px/1.7 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;word-break:break-all}
@@ -352,13 +375,13 @@
   html.share-mode #shareScreen{display:flex}
   #shareScreen .ss-logo{font-weight:900;color:var(--navy);letter-spacing:.14em;font-size:19px;margin:40px 0 6px}
   #shareScreen .ss-logo small{display:block;font-size:11px;letter-spacing:.3em;color:var(--brown-text);margin-top:7px;font-weight:700}
-  #shareScreen .ss-tip{color:#2A5F96;font-size:14px;line-height:1.95;margin:26px 0 14px}
+  #shareScreen .ss-tip{color:#26527F;font-size:14px;line-height:1.95;margin:26px 0 14px}
   /* 主按鈕：立體（漸層 + 硬邊厚度 + 內高光）、正下方置中、按下會沉下去 */
   #shareScreen button{display:block;width:100%;max-width:460px;margin:0 auto;
           padding:22px 18px;border:0;border-radius:16px;
-          background:linear-gradient(180deg,#235FA0 0%,var(--navy) 52%,#0A2A50 100%);
+          background:linear-gradient(180deg,#2A5280 0%,var(--navy) 52%,#0A2A50 100%);
           color:#fff;font-size:20px;font-weight:800;font-family:inherit;letter-spacing:.06em;
-          box-shadow:0 6px 0 #061C36, 0 14px 24px rgba(8,36,68,.34),
+          box-shadow:0 6px 0 #071E3B, 0 14px 24px rgba(8,36,68,.34),
                      inset 0 1px 0 rgba(255,255,255,.24);
           transform:translateY(0);
           transition:transform .07s ease, box-shadow .07s ease, filter .12s ease;
@@ -367,13 +390,13 @@
   #shareScreen button:active,
   #shareScreen button.is-pressed{
           transform:translateY(5px);
-          box-shadow:0 1px 0 #061C36, 0 5px 12px rgba(8,36,68,.26),
+          box-shadow:0 1px 0 #071E3B, 0 5px 12px rgba(8,36,68,.26),
                      inset 0 1px 0 rgba(255,255,255,.18);
           filter:brightness(1.07)}
   /* 處理中（選擇器已開啟）：維持按下的樣子並變暗 */
   #shareScreen button.is-busy{
           transform:translateY(4px);cursor:default;filter:brightness(.93);
-          box-shadow:0 2px 0 #061C36, 0 8px 16px rgba(8,36,68,.3),
+          box-shadow:0 2px 0 #071E3B, 0 8px 16px rgba(8,36,68,.3),
                      inset 0 1px 0 rgba(255,255,255,.16)}
   /* 底部 CTA 條：靠 flex 推到底部（margin-top:auto），內容變長時 sticky 也會黏著 */
   #shareScreen .ss-bar{
@@ -387,27 +410,28 @@
   /* 「用 LINE 開啟並分享」連結：外觀與 #shareScreen button 一致（它是 <a>，不是 button） */
   #shareScreen .ss-openline{display:block;box-sizing:border-box;width:100%;max-width:460px;margin:0 auto 14px;
           padding:22px 18px;border:0;border-radius:16px;text-align:center;text-decoration:none;
-          background:linear-gradient(180deg,#235FA0 0%,var(--navy) 52%,#0A2A50 100%);
+          background:linear-gradient(180deg,#2A5280 0%,var(--navy) 52%,#0A2A50 100%);
           color:#fff;font-size:20px;font-weight:800;font-family:inherit;letter-spacing:.06em;
-          box-shadow:0 6px 0 #061C36, 0 14px 24px rgba(8,36,68,.34),
+          box-shadow:0 6px 0 #071E3B, 0 14px 24px rgba(8,36,68,.34),
                      inset 0 1px 0 rgba(255,255,255,.24);
           transform:translateY(0);
           transition:transform .07s ease, box-shadow .07s ease, filter .12s ease;
           -webkit-tap-highlight-color:transparent;touch-action:manipulation;cursor:pointer}
   #shareScreen .ss-openline:active{
           transform:translateY(5px);
-          box-shadow:0 1px 0 #061C36, 0 5px 12px rgba(8,36,68,.26),
+          box-shadow:0 1px 0 #071E3B, 0 5px 12px rgba(8,36,68,.26),
                      inset 0 1px 0 rgba(255,255,255,.18);
           filter:brightness(1.07)}
   #ssDiag{display:none;margin:26px 0 0;padding:12px 14px;border-radius:12px;background:#061A32;color:#D8E8D2;
           font-size:11px;line-height:1.7;text-align:left;white-space:pre-wrap;font-family:Menlo,Consolas,monospace}
-  #shareScreen .ss-loading{display:none;color:#2A5F96;font-size:15px;font-weight:700;
+  #shareScreen .ss-loading{display:none;color:#26527F;font-size:15px;font-weight:700;
     letter-spacing:.08em;text-align:center;margin:auto 0;padding:60px 0}
   html.share-wait #shareScreen .ss-loading{display:block}
   html.share-wait #shareScreen .ss-logo,
   html.share-wait #shareScreen .ss-tip,
   html.share-wait #shareScreen .ss-bar{visibility:hidden}
-</style>
+  #case img,#ach img{cursor:zoom-in}
+  </style>
 <script>
 /* 分享模式：在畫面繪製前就決定，避免先閃過一頁式網站再隱藏 */
 (function(){
@@ -545,7 +569,7 @@
       <div class="box" style="text-align:center;background:#F2F7F2;border-style:solid">
         <p style="margin:0 0 6px;font-weight:800;color:var(--navy);font-size:15px">想先了解自己的身體數據？加 LINE 預約檢測</p>
         <p style="margin:0;font-weight:800;color:var(--brown);font-size:15px">打電話或傳訊息都可以，輝岳與瑜均一起陪你聊</p>
-        <p style="margin:8px 0 0;font-size:13.5px;color:#4E5A53">告訴我們你的狀況與目標，先了解，再一起決定。</p>
+        <p style="margin:8px 0 0;font-size:13.5px;color:#26527F">告訴我們你的狀況與目標，先了解，再一起決定。</p>
       </div>
 
       <div class="info flat">
@@ -582,13 +606,13 @@
   </div>
 
   <style>
-  #case .cs-sub{margin:-4px 20px 10px;font-size:13px;line-height:1.7;color:#5F706A}
+  #case .cs-sub{margin:-4px 20px 10px;font-size:13px;line-height:1.7;color:#40688F}
   #case .cs-grid{display:grid;gap:12px;margin:0 16px 10px}
-  #case figure{margin:0;background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;overflow:hidden}
+  #case figure{margin:0;background:#fff;border:1px solid rgba(15,58,110,.10);border-radius:14px;overflow:hidden}
   #case img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
   #case figcaption{padding:10px 13px 12px;font-size:13px;line-height:1.6}
   #case figcaption b{display:block;color:var(--navy);font-weight:800;letter-spacing:.02em}
-  #case figcaption span{color:#5F706A}
+  #case figcaption span{color:#40688F}
   </style>
   <section id="case">
   <div class="sec-title">EVENT｜<em>活動與服務實錄</em></div>
@@ -597,22 +621,22 @@
   </section>
 
   <style>
-  #ach .ax-sub{margin:-4px 20px 10px;font-size:13px;line-height:1.7;color:#5F706A}
+  #ach .ax-sub{margin:-4px 20px 10px;font-size:13px;line-height:1.7;color:#40688F}
   #ach .ax-num{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 16px 10px}
   #ach .ax-num>div{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;border-radius:14px;padding:13px 12px}
   #ach .ax-num b{display:block;font-size:22px;color:var(--gold-2);letter-spacing:.02em;line-height:1.3}
   #ach .ax-num span{font-size:12px;opacity:.86}
-  #ach .ax-time{margin:0 16px 10px;background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;padding:12px 14px 8px}
-  #ach .ax-row{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:9px 0;border-top:1px solid rgba(31,58,52,.08)}
+  #ach .ax-time{margin:0 16px 10px;background:#fff;border:1px solid rgba(15,58,110,.10);border-radius:14px;padding:12px 14px 8px}
+  #ach .ax-row{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:9px 0;border-top:1px solid rgba(15,58,110,.08)}
   #ach .ax-row:first-child{border-top:0;padding-top:2px}
   #ach .ax-row b{color:#7A5C26;font-weight:800;white-space:nowrap;font-size:13px}
-  #ach .ax-row span{font-size:13px;line-height:1.65;color:#5F706A}
+  #ach .ax-row span{font-size:13px;line-height:1.65;color:#40688F}
   /* 實績 9 張活動照：單欄會太長，改兩欄（窄螢幕仍單欄） */
   #ach .ax-ph{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 16px 10px}
   @media (max-width:380px){#ach .ax-ph{grid-template-columns:1fr}}
-  #ach .ax-ph figure{margin:0;background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;overflow:hidden}
+  #ach .ax-ph figure{margin:0;background:#fff;border:1px solid rgba(15,58,110,.10);border-radius:14px;overflow:hidden}
   #ach .ax-ph img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
-  #ach .ax-ph figcaption{padding:8px 13px 10px;font-size:12.5px;color:#5F706A}
+  #ach .ax-ph figcaption{padding:8px 13px 10px;font-size:12.5px;color:#40688F}
   </style>
   <section id="ach">
   <div class="sec-title">ACHIEVEMENT｜<em>實績</em></div>
@@ -625,19 +649,19 @@
   <style>
   #service{scroll-margin-top:56px}
   #service .sv-grid{display:grid;gap:10px;margin:0 16px 10px}
-  #service .sv-card{background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;padding:14px 14px 14px}
+  #service .sv-card{background:#fff;border:1px solid rgba(15,58,110,.10);border-radius:14px;padding:14px 14px 14px}
   #service .sv-card h3{margin:0 0 4px;font-size:16px;color:var(--navy);letter-spacing:.04em}
-  #service .sv-desc{margin:0 0 8px;font-size:13.5px;line-height:1.7;color:#3B4A45}
+  #service .sv-desc{margin:0 0 8px;font-size:13.5px;line-height:1.7;color:#1B4676}
   #service .sv-desc .nb,#service .sv-list .nb{display:inline-block}
   #service .sv-dt{font-size:12.5px;font-weight:800;color:var(--brown-text);letter-spacing:.1em;margin:0 0 4px}
-  #service .sv-list{margin:0 0 12px;padding:8px 0 0;list-style:none;border-top:1px solid rgba(31,58,52,.08)}
-  #service .sv-list li{position:relative;padding-left:18px;font-size:13.5px;line-height:1.7;color:#3B4A45;margin-bottom:2px}
+  #service .sv-list{margin:0 0 12px;padding:8px 0 0;list-style:none;border-top:1px solid rgba(15,58,110,.08)}
+  #service .sv-list li{position:relative;padding-left:18px;font-size:13.5px;line-height:1.7;color:#1B4676;margin-bottom:2px}
   #service .sv-list li::before{content:"✓";position:absolute;left:0;top:0;color:var(--brown);font-weight:800}
   #service .sv-cta{display:flex;align-items:center;justify-content:center;padding:12px 10px;border-radius:14px;
        text-decoration:none;font-size:14px;font-weight:800;letter-spacing:.06em;color:#fff;
-       background:linear-gradient(180deg,#3A6B5E,#2C564C);border:1px solid rgba(255,255,255,.52);
-       box-shadow:0 4px 0 rgba(10,20,18,.55), 0 8px 16px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.20)}
-  #service .sv-cta:active{transform:translateY(4px);box-shadow:0 1px 0 rgba(10,20,18,.5), 0 3px 8px rgba(0,0,0,.18)}
+       background:linear-gradient(180deg,#1C5AA0,#1C5AA0);border:1px solid rgba(255,255,255,.52);
+       box-shadow:0 4px 0 rgba(6,28,54,.55), 0 8px 16px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.20)}
+  #service .sv-cta:active{transform:translateY(4px);box-shadow:0 1px 0 rgba(6,28,54,.5), 0 3px 8px rgba(0,0,0,.18)}
   #service .sv-cta:focus-visible{outline:3px solid var(--brown);outline-offset:3px}
   </style>
   <section id="service">
@@ -675,12 +699,12 @@
   </script>
 
   <style>
-  #compare .cp{margin:0 16px 10px;background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;overflow:hidden}
+  #compare .cp{margin:0 16px 10px;background:#fff;border:1px solid rgba(15,58,110,.10);border-radius:14px;overflow:hidden}
   #compare table{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.6}
-  #compare th,#compare td{padding:9px 10px;text-align:left;vertical-align:top;border-top:1px solid rgba(31,58,52,.08)}
-  #compare thead th{border-top:0;background:rgba(31,58,52,.05);font-size:12px;letter-spacing:.04em;color:var(--navy)}
+  #compare th,#compare td{padding:9px 10px;text-align:left;vertical-align:top;border-top:1px solid rgba(15,58,110,.08)}
+  #compare thead th{border-top:0;background:rgba(15,58,110,.05);font-size:12px;letter-spacing:.04em;color:var(--navy)}
   #compare td:first-child,#compare th:first-child{width:26%;font-weight:800;color:var(--navy)}
-  #compare td:nth-child(2){color:#5F706A}
+  #compare td:nth-child(2){color:#40688F}
   #compare td:nth-child(3){color:var(--navy);font-weight:700}
   </style>
   <section id="compare">
@@ -785,7 +809,7 @@ let payloadFailed = false;
 
 /* 改動 flex-cards.json 後請把 BUILD 往後跳一號：
    LINE 內建瀏覽器會快取檔案，不跳號會一直送出舊版卡片 */
-const BUILD = 'b277';
+const BUILD = 'b312';
 const PAGE_VER = '2026-11-26-2130' // 每次改頁面就改這個，用來確認手機拿到的是最新版
 
 /* ═══════ FLEX_PAYLOAD_START（由 build_flex.py 自動寫入，勿手改）═══════ */
@@ -1365,7 +1389,7 @@ async function shareCard(){
         const shareBtn = { type:'button', style:'secondary', action:{ type:'uri', label:'分享給好友', uri:'https://liff.line.me/2011946176-XIyDw2L1?share=1' } };
         const bodyOf = (t, extra) => ({ type:'box', layout:'vertical', contents:
           [ { type:'text', text:t, color:'#B4462F', weight:'bold' },
-            { type:'text', text:'看到這張＝這一版可用', size:'sm', color:'#2A5F96', wrap:true } ].concat(extra || []) });
+            { type:'text', text:'看到這張＝這一版可用', size:'sm', color:'#26527F', wrap:true } ].concat(extra || []) });
 
         // A：三顆導航按鈕（基本樣式、橫向）＋分享鈕放 body
         const deckA = P.map((b,i) => ({ type:'bubble', hero: JSON.parse(JSON.stringify(b.hero)),
@@ -1386,9 +1410,9 @@ async function shareCard(){
         const P = JSON.parse(JSON.stringify(flexPayload)).contents.contents;
         const cp = o => JSON.parse(JSON.stringify(o));
         const hbox = kids => ({ type:'box', layout:'horizontal', spacing:'sm', contents:kids });
-        const b3 = () => [ { type:'button', style:'primary', color:'#082444', action:{ type:'uri', label:'官方網站', uri: LINKS.site } },
+        const b3 = () => [ { type:'button', style:'primary', color:'#0F3A6E', action:{ type:'uri', label:'官方網站', uri: LINKS.site } },
                            { type:'button', style:'primary', color:'#7FC241', action:{ type:'uri', label:'LINE 諮詢', uri: LINKS.line } },
-                           { type:'button', style:'primary', color:'#082444', action:{ type:'uri', label:'導航門市', uri: LINKS.map } } ];
+                           { type:'button', style:'primary', color:'#0F3A6E', action:{ type:'uri', label:'導航門市', uri: LINKS.map } } ];
         const shareBtn = { type:'button', style:'secondary', action:{ type:'uri', label:'分享給好友', uri:'https://liff.line.me/2011946176-XIyDw2L1?share=1' } };
         const oneBtn = { type:'box', layout:'vertical', contents:[ { type:'button', style:'primary', action:{ type:'uri', label:'官方網站', uri: LINKS.site } } ] };
         const bigFooter = { type:'box', layout:'vertical', spacing:'sm', paddingAll:'12px', contents:[ hbox(b3()), shareBtn ] };
@@ -1441,8 +1465,8 @@ async function shareCard(){
         const cp = o => JSON.parse(JSON.stringify(o));
         const IMG_URL = P[0].hero.url;
         const mkBtn = (label, uri, color) => ({ type:'button', style:'primary', color, action:{ type:'uri', label, uri } });
-        const three = () => [ mkBtn('官方網站', LINKS.site, '#082444'), mkBtn('LINE 諮詢', LINKS.line, '#7FC241'), mkBtn('導航門市', LINKS.map, '#082444') ];
-        const two    = () => [ mkBtn('官方網站', LINKS.site, '#082444'), mkBtn('LINE 諮詢', LINKS.line, '#7FC241') ];
+        const three = () => [ mkBtn('官方網站', LINKS.site, '#0F3A6E'), mkBtn('LINE 諮詢', LINKS.line, '#7FC241'), mkBtn('導航門市', LINKS.map, '#0F3A6E') ];
+        const two    = () => [ mkBtn('官方網站', LINKS.site, '#0F3A6E'), mkBtn('LINE 諮詢', LINKS.line, '#7FC241') ];
         const hbox = kids => ({ type:'box', layout:'horizontal', spacing:'sm', contents:kids });
         const mk = (t, which, size) => {
           const b = {}; if(size) b.size = size;
@@ -1465,13 +1489,13 @@ async function shareCard(){
         const cp = o => JSON.parse(JSON.stringify(o));
         const HERO = cp(P[0].hero);
         const L = 'https://liff.line.me/2011946176-XIyDw2L1';
-        const b3 = () => [ { type:'button', style:'primary', color:'#082444', action:{ type:'uri', label:'官方網站', uri: LINKS.site } },
+        const b3 = () => [ { type:'button', style:'primary', color:'#0F3A6E', action:{ type:'uri', label:'官方網站', uri: LINKS.site } },
                            { type:'button', style:'primary', color:'#7FC241', action:{ type:'uri', label:'LINE 諮詢', uri: LINKS.line } },
-                           { type:'button', style:'primary', color:'#082444', action:{ type:'uri', label:'導航門市', uri: LINKS.map } } ];
+                           { type:'button', style:'primary', color:'#0F3A6E', action:{ type:'uri', label:'導航門市', uri: LINKS.map } } ];
         const shareBtn = () => ({ type:'button', style:'secondary', action:{ type:'uri', label:'分享給好友', uri: L + '?share=1' }});
         const hbox = kids => ({ type:'box', layout:'horizontal', spacing:'sm', contents:kids });
         const txts = t => [ { type:'text', text:t, color:'#B4462F', weight:'bold' },
-                            { type:'text', text:'看到這張＝這個組合可用', size:'sm', color:'#2A5F96', wrap:true } ];
+                            { type:'text', text:'看到這張＝這個組合可用', size:'sm', color:'#26527F', wrap:true } ];
         const bubble = (t, bodyExtra, footerKids, withHero) => {
           const b = {};
           if(withHero) b.hero = cp(HERO);
@@ -1496,12 +1520,12 @@ async function shareCard(){
         const goodFooter = P[0].footer;
         const bodySimple = (t, sub) => ({ type:'box', layout:'vertical', contents:[
           { type:'text', text:t, color:'#B4462F', weight:'bold' },
-          { type:'text', text:sub, size:'sm', color:'#2A5F96', wrap:true } ]});
+          { type:'text', text:sub, size:'sm', color:'#26527F', wrap:true } ]});
         const bodyWithSep = (t, sub) => ({ type:'box', layout:'vertical', contents:[
           { type:'text', text:t, color:'#B4462F', weight:'bold' },
-          { type:'text', text:sub, size:'sm', color:'#2A5F96', wrap:true },
+          { type:'text', text:sub, size:'sm', color:'#26527F', wrap:true },
           { type:'separator', margin:'md', color:'#E4ECF5' },
-          { type:'text', text:'樣式文字（xl 粗體）', size:'xl', color:'#082444', weight:'bold', align:'start', margin:'md' } ]});
+          { type:'text', text:'樣式文字（xl 粗體）', size:'xl', color:'#0F3A6E', weight:'bold', align:'start', margin:'md' } ]});
         const mkCard = (t, body) => ({ type:'flex', altText:t,
           contents:{ type:'bubble', hero: cp(P[0].hero), body, footer: cp(goodFooter) } });
         const mkCar = (code, bodyFn) => ({ type:'flex', altText:code, contents:{ type:'carousel',
@@ -1588,18 +1612,18 @@ async function shareCard(){
         const s3 = mkM('S3 footer 橫向 3 顆彩色按鈕＋分享鈕', b => {
           b.footer = { type:'box', layout:'vertical', spacing:'sm', paddingAll:'12px', contents:[
             { type:'box', layout:'horizontal', spacing:'sm', contents:[
-              { type:'button', style:'primary', color:'#082444', action:{ type:'uri', label:'官方網站', uri: LINKS.site } },
+              { type:'button', style:'primary', color:'#0F3A6E', action:{ type:'uri', label:'官方網站', uri: LINKS.site } },
               { type:'button', style:'primary', color:'#7FC241', action:{ type:'uri', label:'LINE 諮詢', uri: LINKS.line } },
-              { type:'button', style:'primary', color:'#082444', action:{ type:'uri', label:'導航門市', uri: LINKS.map } } ]},
+              { type:'button', style:'primary', color:'#0F3A6E', action:{ type:'uri', label:'導航門市', uri: LINKS.map } } ]},
             { type:'button', style:'secondary', action:{ type:'uri', label:'分享給好友', uri: L + '?share=1' } } ]};
         });
         const s4 = mkM('S4 body 加分隔線＋大號樣式文字', b => {
           b.body.contents.splice(1, 0,
             { type:'separator', margin:'md', color:'#E4ECF5' },
-            { type:'text', text:'樣式文字', size:'xl', color:'#082444', weight:'bold', align:'start', margin:'md' });
+            { type:'text', text:'樣式文字', size:'xl', color:'#0F3A6E', weight:'bold', align:'start', margin:'md' });
         });
         const prod1 = JSON.parse(JSON.stringify(flexPayload)).contents.contents[0];
-        prod1.body.contents[0] = { type:'text', text:'S5 完整正式版卡片', color:'#082444', weight:'bold' };
+        prod1.body.contents[0] = { type:'text', text:'S5 完整正式版卡片', color:'#0F3A6E', weight:'bold' };
         const s5 = { type:'flex', altText:'S5 完整正式版', contents: prod1 };
         msg = [s1, s2, s3, s4, s5];
         label = 'S1 加圖片／S2 圖片+點擊／S3 橫向彩色按鈕／S4 分隔線樣式／S5 完整版';
@@ -1649,9 +1673,9 @@ async function shareCard(){
         const src7 = JSON.parse(JSON.stringify(flexPayload)).contents.contents;
         const goodFooter = { type:'box', layout:'vertical', spacing:'sm', paddingAll:'12px', contents:[
           { type:'box', layout:'horizontal', spacing:'sm', contents:[
-            { type:'button', style:'primary', color:'#082444', action:{ type:'uri', label:'官方網站', uri: LINKS.site } },
+            { type:'button', style:'primary', color:'#0F3A6E', action:{ type:'uri', label:'官方網站', uri: LINKS.site } },
             { type:'button', style:'primary', color:'#7FC241', action:{ type:'uri', label:'LINE 諮詢', uri: LINKS.line } },
-            { type:'button', style:'primary', color:'#082444', action:{ type:'uri', label:'導航門市', uri: LINKS.map } } ]},
+            { type:'button', style:'primary', color:'#0F3A6E', action:{ type:'uri', label:'導航門市', uri: LINKS.map } } ]},
           { type:'button', style:'secondary', action:{ type:'uri', label:'分享給好友',
             uri: 'https://liff.line.me/2011946176-XIyDw2L1?share=1' } } ]};
         const fixed = src7.map(b => { const c = JSON.parse(JSON.stringify(b)); c.footer = JSON.parse(JSON.stringify(goodFooter)); return c; });
@@ -1677,16 +1701,16 @@ async function shareCard(){
         // Z1：Y2 寫法（只有 color），但用三個真實網址
         const z1 = { type:'bubble', body: lbl('Z1：橫向＋顏色，用真實三網址'),
           footer: vbox([ hbox([
-            urlBtn('primary','#082444', LINKS.site, '官方網站'),
+            urlBtn('primary','#0F3A6E', LINKS.site, '官方網站'),
             urlBtn('primary','#7FC241', LINKS.line, 'LINE 諮詢'),
-            urlBtn('primary','#082444', LINKS.map,  '導航門市') ]) ]) };
+            urlBtn('primary','#0F3A6E', LINKS.map,  '導航門市') ]) ]) };
 
         // Z2：Y2 寫法＋同一 footer 再接一顆分享鈕
         const z2 = { type:'bubble', body: lbl('Z2：橫向＋顏色＋同 footer 再接分享鈕'),
           footer: vbox([ hbox([
-            urlBtn('primary','#082444', LINKS.site, '官方網站'),
+            urlBtn('primary','#0F3A6E', LINKS.site, '官方網站'),
             urlBtn('primary','#7FC241', LINKS.line, 'LINE 諮詢'),
-            urlBtn('primary','#082444', LINKS.map,  '導航門市') ]), shareBtn ]) };
+            urlBtn('primary','#0F3A6E', LINKS.map,  '導航門市') ]), shareBtn ]) };
 
         // Z3：原始失敗版 footer（對照）
         const z3 = { type:'bubble', body: lbl('Z3：原始失敗版（對照）'),
@@ -1720,9 +1744,9 @@ async function shareCard(){
         const y1 = { type:'bubble', body: lbl('Y1：橫向 3 顆 plain（對照）'),
                      footer: vbox([ hbox([plain(),plain(),plain()]) ]) };
         const y2 = { type:'bubble', body: lbl('Y2：橫向 3 顆「只有 color」'),
-                     footer: vbox([ hbox([ mk('primary',{color:'#082444'}), mk('primary',{color:'#7FC241'}), mk('primary',{color:'#082444'}) ]) ]) };
+                     footer: vbox([ hbox([ mk('primary',{color:'#0F3A6E'}), mk('primary',{color:'#7FC241'}), mk('primary',{color:'#0F3A6E'}) ]) ]) };
         const y3 = { type:'bubble', body: lbl('Y3：橫向 3 顆「color＋height」'),
-                     footer: vbox([ hbox([ mk('primary',{color:'#082444',height:'sm'}), mk('primary',{color:'#7FC241',height:'sm'}), mk('primary',{color:'#082444',height:'sm'}) ]) ]) };
+                     footer: vbox([ hbox([ mk('primary',{color:'#0F3A6E',height:'sm'}), mk('primary',{color:'#7FC241',height:'sm'}), mk('primary',{color:'#0F3A6E',height:'sm'}) ]) ]) };
         const y4 = { type:'bubble',
                      body: { type:'box', layout:'vertical', contents:[
                        { type:'text', text:'Y4：橫向 3 顆 plain＋body 內分享鈕', weight:'bold' },
@@ -1747,7 +1771,7 @@ async function shareCard(){
         const w1 = { type:'bubble', body: lbl('W1：3 顆按鈕垂直（基本樣式）'),
                      footer: vbox([ plain('官網'), plain('LINE'), plain('導航') ]) };
         const w2 = { type:'bubble', body: lbl('W2：3 顆按鈕垂直（我們的屬性）'),
-                     footer: vbox([ fancy('官網','#082444'), fancy('LINE','#7FC241'), shareBtn ]) };
+                     footer: vbox([ fancy('官網','#0F3A6E'), fancy('LINE','#7FC241'), shareBtn ]) };
         const w3 = { type:'bubble', body: lbl('W3：橫向 box 內 3 顆按鈕'),
                      footer: vbox([ { type:'box', layout:'horizontal', spacing:'sm',
                                       contents:[ plain('官網'), plain('LINE'), plain('導航') ] } ]) };
@@ -1924,6 +1948,16 @@ function bindRail(){
     /* 最接近中央的卡片加深陰影（只動 box-shadow，不動 transform） */
     [...rail.children].forEach((c, i) => c.classList.toggle('is-center', i === best));
     updateArrows();
+    /* 滑動提示：到最後一張改成「已經到底」，不再邀請往右滑 */
+    const hint = document.getElementById('railHint');
+    if(hint){
+      const end = best >= n - 1;
+      hint.classList.toggle('is-end', end);
+      const ht = hint.querySelector('.rh-txt');
+      if(ht) ht.textContent = end ? '已經到底了' : '左右滑動看更多';
+      const hr = hint.querySelector('.arr.r');
+      if(hr) hr.hidden = end;
+    }
   };
   /* 左右箭頭：rail 本身會捲動，箭頭要放在外層 .rail-wrap 才不會跟著捲走。
      重複呼叫時先清掉舊箭頭再建，不會重複 */
@@ -2027,7 +2061,7 @@ bindRail();
     document.addEventListener('click', e => {
       const t = e.target;
       if(!t || !t.closest || !box.hidden) return;
-      const img = t.closest('.wall img, .craft img');   /* 已被換成 .ph 的就不會命中 */
+      const img = t.closest('.wall img, .craft img, #case img, #ach img');   /* 已被換成 .ph 的就不會命中 */
       if(!img || !(img.currentSrc || img.src)) return;
       list = albumOf(img) || [];
       if(!list.length) return;
