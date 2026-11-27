@@ -22,7 +22,7 @@
             {
               "type": "text",
               "text": "夫妻同心，陪你翻轉健康人生",
-              "size": "sm",
+              "size": "xxs",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -44,7 +44,7 @@
             {
               "type": "text",
               "text": "1 / 7",
-              "size": "xs",
+              "size": "xxs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -261,7 +261,7 @@
             {
               "type": "text",
               "text": "想找回健康・健檢見紅字",
-              "size": "sm",
+              "size": "xxs",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -283,7 +283,7 @@
             {
               "type": "text",
               "text": "2 / 7",
-              "size": "xs",
+              "size": "xxs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -500,7 +500,7 @@
             {
               "type": "text",
               "text": "非侵入快篩・個人化營養",
-              "size": "sm",
+              "size": "xxs",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -522,7 +522,7 @@
             {
               "type": "text",
               "text": "3 / 7",
-              "size": "xs",
+              "size": "xxs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -739,7 +739,7 @@
             {
               "type": "text",
               "text": "13＋10 項評估・40 秒檢測",
-              "size": "sm",
+              "size": "xxs",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -761,7 +761,7 @@
             {
               "type": "text",
               "text": "4 / 7",
-              "size": "xs",
+              "size": "xxs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -978,7 +978,7 @@
             {
               "type": "text",
               "text": "健康不是買產品，是調整生活",
-              "size": "sm",
+              "size": "xxs",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -1000,7 +1000,7 @@
             {
               "type": "text",
               "text": "5 / 7",
-              "size": "xs",
+              "size": "xxs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -1217,7 +1217,7 @@
             {
               "type": "text",
               "text": "Life Renew 心煥營養團隊",
-              "size": "sm",
+              "size": "xxs",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -1239,7 +1239,7 @@
             {
               "type": "text",
               "text": "6 / 7",
-              "size": "xs",
+              "size": "xxs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -1456,7 +1456,7 @@
             {
               "type": "text",
               "text": "讓我們陪你走下一步",
-              "size": "sm",
+              "size": "xxs",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -1478,7 +1478,7 @@
             {
               "type": "text",
               "text": "7 / 7",
-              "size": "xs",
+              "size": "xxs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
