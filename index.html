@@ -107,6 +107,10 @@
   .gear{margin:10px 0 0;font-size:12px;color:#446084;line-height:1.7}
 
   .actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-top:20px}
+  /* 按鈕文字一律不換行（寬度不足時由上面的 auto 欄位解決，不是靠換行） */
+  /* 按鈕標籤一律單行：字級隨視窗寬度微縮（2.9vw），窄機（360/390px）也塞得下
+     「導航到總公司」這種 6 字標籤。等寬（1fr）維持整齊。 */
+  .actions .btn{white-space:nowrap;font-size:clamp(10px,2.9vw,12px)}
   .btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
        padding:12px 5px;border-radius:14px;text-decoration:none;font-size:12px;font-weight:700;
        color:#fff;background:linear-gradient(180deg,#17518F,#17518F);
@@ -620,7 +624,7 @@
   #ach .ax-ph{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 16px 10px}
   @media (max-width:380px){#ach .ax-ph{grid-template-columns:1fr}}
   #ach .ax-ph figure{margin:0;background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;overflow:hidden}
-  #ach .ax-ph img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  #ach .ax-ph img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
   #ach .ax-ph figcaption{padding:8px 13px 10px;font-size:12px;color:#44688F}
   </style>
   <section id="ach">
@@ -635,7 +639,7 @@
   #service{scroll-margin-top:56px}
   #service .sv-grid{display:grid;gap:10px;margin:0 16px 10px}
   #service .sv-card{background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;padding:14px 14px 14px}
-  #service .sv-img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin:0 0 10px}
+  #service .sv-img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;margin:0 0 10px}
   #service .sv-card h3{margin:0 0 4px;font-size:16px;color:var(--navy);letter-spacing:.06em}
   #service .sv-desc{margin:0 0 8px;font-size:14px;line-height:1.7;color:#16406E}
   #service .sv-desc .nb,#service .sv-list .nb{display:inline-block}
@@ -689,7 +693,7 @@
   #products .pd-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 16px 8px}
   @media (max-width:340px){#products .pd-grid{grid-template-columns:1fr}}
   #products .pd-card{margin:0;background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;overflow:hidden}
-  #products .pd-card img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#fff}
+  #products .pd-card img{display:block;width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff}
   #products .pd-card figcaption{padding:10px 12px 12px}
   #products .pd-card b{display:block;font-size:14px;color:var(--navy);letter-spacing:.04em}
   #products .pd-en{display:block;font-size:11px;letter-spacing:.08em;color:#44688F;margin:1px 0 4px}
@@ -814,7 +818,7 @@ let payloadFailed = false;
 
 /* 改動 flex-cards.json 後請把 BUILD 往後跳一號：
    LINE 內建瀏覽器會快取檔案，不跳號會一直送出舊版卡片 */
-const BUILD = 'b346';
+const BUILD = 'b347';
 const PAGE_VER = '2026-11-26-2130' // 每次改頁面就改這個，用來確認手機拿到的是最新版
 
 /* ═══════ FLEX_PAYLOAD_START（由 build_flex.py 自動寫入，勿手改）═══════ */
