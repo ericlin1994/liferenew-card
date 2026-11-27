@@ -186,9 +186,12 @@
 
   /* 數據 */
   .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:4px 0 14px}
-  .stats div{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;border-radius:14px;padding:13px 10px;text-align:center}
+  /* 左右內距 10→8：手機上格子內寬只差幾 px 就換行（實測 390px 需要 112.3／只有 108.5） */
+  .stats div{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;border-radius:14px;padding:13px 8px;text-align:center}
   .stats b{display:block;font-size:23px;color:var(--gold-2);letter-spacing:.04em;line-height:1.3}
-  .stats span{font-size:12px;color:#CEE2C7;letter-spacing:.04em}
+  /* 標籤一律單行：字級隨視窗微縮（2.9vw），窄機（360px）也塞得下
+     「身體特性與器官評分」這種 9 字標籤，不會被拆成兩行 */
+  .stats span{font-size:clamp(10.5px,2.9vw,12px);color:#CEE2C7;letter-spacing:.04em;white-space:nowrap}
   .steps{list-style:none;margin:0;padding:0;counter-reset:s}
   .steps li{position:relative;padding:9px 0 9px 46px;border-bottom:1px dashed rgba(10,44,82,.10);font-size:14px;color:#16406E}
   .steps li:last-child{border-bottom:0}
@@ -570,10 +573,10 @@
     <!-- ═══════════ 聯絡 ═══════════ -->
     <article class="card">
       <h3>聯絡<em>我們</em></h3>
-      <div class="box" style="text-align:center;background:#F5F6F1;border-style:solid">
+      <div class="box" style="text-align:center;background:#F2F7F2;border-style:solid">
         <p style="margin:0 0 6px;font-weight:800;color:var(--navy);font-size:14px">想先了解自己的身體數據？加 LINE 預約檢測</p>
         <p style="margin:0;font-weight:800;color:var(--brown);font-size:14px">打電話或傳訊息都可以，輝岳與瑜均一起陪你聊</p>
-        <p style="margin:8px 0 0;font-size:14px;color:#214C79">告訴我們你的狀況與目標，先了解，再一起決定。</p>
+        <p style="margin:8px 0 0;font-size:14px;color:#4E5A53">告訴我們你的狀況與目標，先了解，再一起決定。</p>
       </div>
 
       <div class="info flat">
@@ -595,13 +598,13 @@
   <div class="count" id="count"><b>1</b> / 4　左右滑動看更多</div>
 
   <style>
-  #case .cs-sub{margin:-4px 20px 10px;font-size:12px;line-height:1.7;color:#44688F}
+  #case .cs-sub{margin:-4px 20px 10px;font-size:12px;line-height:1.7;color:#5F706A}
   #case .cs-grid{display:grid;gap:12px;margin:0 16px 10px}
   #case figure{margin:0;background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;overflow:hidden}
   #case img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
   #case figcaption{padding:10px 13px 12px;font-size:12px;line-height:1.6}
   #case figcaption b{display:block;color:var(--navy);font-weight:800;letter-spacing:normal}
-  #case figcaption span{color:#44688F}
+  #case figcaption span{color:#5F706A}
   </style>
   <section id="case">
   <div class="sec-title">EVENT｜<em>活動與服務實錄</em></div>
@@ -610,7 +613,7 @@
   </section>
 
   <style>
-  #ach .ax-sub{margin:-4px 20px 10px;font-size:12px;line-height:1.7;color:#44688F}
+  #ach .ax-sub{margin:-4px 20px 10px;font-size:12px;line-height:1.7;color:#5F706A}
   #ach .ax-num{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 16px 10px}
   #ach .ax-num>div{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;border-radius:14px;padding:13px 12px}
   #ach .ax-num b{display:block;font-size:21px;color:var(--gold-2);letter-spacing:.04em;line-height:1.3}
@@ -619,13 +622,13 @@
   #ach .ax-row{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:9px 0;border-top:1px solid rgba(31,58,52,.08)}
   #ach .ax-row:first-child{border-top:0;padding-top:4px}
   #ach .ax-row b{color:#7A5C26;font-weight:800;white-space:nowrap;font-size:12px}
-  #ach .ax-row span{font-size:12px;line-height:1.65;color:#44688F}
+  #ach .ax-row span{font-size:12px;line-height:1.65;color:#5F706A}
   /* 實績 9 張活動照：單欄會太長，改兩欄（窄螢幕仍單欄） */
   #ach .ax-ph{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 16px 10px}
   @media (max-width:380px){#ach .ax-ph{grid-template-columns:1fr}}
   #ach .ax-ph figure{margin:0;background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;overflow:hidden}
   #ach .ax-ph img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
-  #ach .ax-ph figcaption{padding:8px 13px 10px;font-size:12px;color:#44688F}
+  #ach .ax-ph figcaption{padding:8px 13px 10px;font-size:12px;color:#5F706A}
   </style>
   <section id="ach">
   <div class="sec-title">ACHIEVEMENT｜<em>實績</em></div>
@@ -641,15 +644,15 @@
   #service .sv-card{background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;padding:14px 14px 14px}
   #service .sv-img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;margin:0 0 10px}
   #service .sv-card h3{margin:0 0 4px;font-size:16px;color:var(--navy);letter-spacing:.06em}
-  #service .sv-desc{margin:0 0 8px;font-size:14px;line-height:1.7;color:#16406E}
+  #service .sv-desc{margin:0 0 8px;font-size:14px;line-height:1.7;color:#3B4A45}
   #service .sv-desc .nb,#service .sv-list .nb{display:inline-block}
   #service .sv-dt{font-size:12px;font-weight:800;color:var(--brown-text);letter-spacing:.04em;margin:0 0 4px}
   #service .sv-list{margin:0 0 12px;padding:8px 0 0;list-style:none;border-top:1px solid rgba(31,58,52,.08)}
-  #service .sv-list li{position:relative;padding-left:18px;font-size:14px;line-height:1.7;color:#16406E;margin-bottom:2px}
+  #service .sv-list li{position:relative;padding-left:18px;font-size:14px;line-height:1.7;color:#3B4A45;margin-bottom:2px}
   #service .sv-list li::before{content:"✓";position:absolute;left:0;top:0;color:var(--brown);font-weight:800}
   #service .sv-cta{display:flex;align-items:center;justify-content:center;padding:12px 10px;border-radius:14px;
        text-decoration:none;font-size:14px;font-weight:800;letter-spacing:.04em;color:#fff;
-       background:linear-gradient(180deg,#17518F,#17518F);border:1px solid rgba(255,255,255,.52);
+       background:linear-gradient(180deg,#3A6B5E,#2C564C);border:1px solid rgba(255,255,255,.52);
        box-shadow:0 4px 0 rgba(10,20,18,.55), 0 8px 16px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.20)}
   #service .sv-cta:active{transform:translateY(4px);box-shadow:0 1px 0 rgba(10,20,18,.5), 0 3px 8px rgba(0,0,0,.18)}
   #service .sv-cta:focus-visible{outline:3px solid var(--brown);outline-offset:3px}
@@ -689,16 +692,16 @@
   </script>
 
   <style>
-  #products .pd-sub{margin:-4px 20px 10px;font-size:12px;line-height:1.7;color:#44688F}
+  #products .pd-sub{margin:-4px 20px 10px;font-size:12px;line-height:1.7;color:#5F706A}
   #products .pd-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 16px 8px}
   @media (max-width:340px){#products .pd-grid{grid-template-columns:1fr}}
   #products .pd-card{margin:0;background:#fff;border:1px solid rgba(31,58,52,.10);border-radius:14px;overflow:hidden}
   #products .pd-card img{display:block;width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff}
   #products .pd-card figcaption{padding:10px 12px 12px}
   #products .pd-card b{display:block;font-size:14px;color:var(--navy);letter-spacing:.04em}
-  #products .pd-en{display:block;font-size:11px;letter-spacing:.08em;color:#44688F;margin:1px 0 4px}
-  #products .pd-card p{margin:0;font-size:12px;line-height:1.6;color:#44688F}
-  #products .pd-credit{margin:0 20px 10px;font-size:11px;line-height:1.6;color:#44688F}
+  #products .pd-en{display:block;font-size:11px;letter-spacing:.08em;color:#5F706A;margin:1px 0 4px}
+  #products .pd-card p{margin:0;font-size:12px;line-height:1.6;color:#5F706A}
+  #products .pd-credit{margin:0 20px 10px;font-size:11px;line-height:1.6;color:#5F706A}
   </style>
   <section id="products">
   <div class="sec-title">PRODUCT｜<em>原廠產品</em></div>
@@ -713,7 +716,7 @@
   #compare th,#compare td{padding:9px 10px;text-align:left;vertical-align:top;border-top:1px solid rgba(31,58,52,.08)}
   #compare thead th{border-top:0;background:rgba(31,58,52,.05);font-size:12px;letter-spacing:.04em;color:var(--navy)}
   #compare td:first-child,#compare th:first-child{width:26%;font-weight:800;color:var(--navy)}
-  #compare td:nth-child(2){color:#44688F}
+  #compare td:nth-child(2){color:#5F706A}
   #compare td:nth-child(3){color:var(--navy);font-weight:700}
   </style>
   <section id="compare">
@@ -818,7 +821,7 @@ let payloadFailed = false;
 
 /* 改動 flex-cards.json 後請把 BUILD 往後跳一號：
    LINE 內建瀏覽器會快取檔案，不跳號會一直送出舊版卡片 */
-const BUILD = 'b347';
+const BUILD = 'b348';
 const PAGE_VER = '2026-11-26-2130' // 每次改頁面就改這個，用來確認手機拿到的是最新版
 
 /* ═══════ FLEX_PAYLOAD_START（由 build_flex.py 自動寫入，勿手改）═══════ */
