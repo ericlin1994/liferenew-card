@@ -1427,14 +1427,14 @@
         },
         "hero": {
           "type": "image",
-          "url": "https://liferenew.cardtaiwan.com/img/card6-e16ee9a2.jpg",
+          "url": "https://liferenew.cardtaiwan.com/img/card6-c457e15a.jpg",
           "size": "full",
           "aspectRatio": "3:4",
           "aspectMode": "cover",
           "action": {
             "type": "uri",
-            "label": "了解服務內容",
-            "uri": "https://liferenew.cardtaiwan.com/?go=service#service"
+            "label": "開啟名片",
+            "uri": "https://liff.line.me/2011946176-OWaDN0zD?t=1&c=liferenew&to=page&u=https%3A%2F%2Fliff.line.me%2F2011946176-XIyDw2L1"
           }
         }
       },
