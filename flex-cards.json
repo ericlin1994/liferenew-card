@@ -22,7 +22,7 @@
             {
               "type": "text",
               "text": "夫妻同心，陪你翻轉健康人生",
-              "size": "xxs",
+              "size": "sm",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -44,7 +44,7 @@
             {
               "type": "text",
               "text": "1 / 7",
-              "size": "xxs",
+              "size": "xs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -70,7 +70,7 @@
                     {
                       "type": "text",
                       "text": "LINE 諮詢",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -110,7 +110,7 @@
                     {
                       "type": "text",
                       "text": "健康快篩",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -150,7 +150,7 @@
                     {
                       "type": "text",
                       "text": "打電話",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -197,7 +197,7 @@
                     {
                       "type": "text",
                       "text": "分享名片",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -261,7 +261,7 @@
             {
               "type": "text",
               "text": "想找回健康・健檢見紅字",
-              "size": "xxs",
+              "size": "sm",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -283,7 +283,7 @@
             {
               "type": "text",
               "text": "2 / 7",
-              "size": "xxs",
+              "size": "xs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -309,7 +309,7 @@
                     {
                       "type": "text",
                       "text": "LINE 諮詢",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -349,7 +349,7 @@
                     {
                       "type": "text",
                       "text": "健康快篩",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -389,7 +389,7 @@
                     {
                       "type": "text",
                       "text": "打電話",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -436,7 +436,7 @@
                     {
                       "type": "text",
                       "text": "分享名片",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -500,7 +500,7 @@
             {
               "type": "text",
               "text": "非侵入快篩・個人化營養",
-              "size": "xxs",
+              "size": "sm",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -522,7 +522,7 @@
             {
               "type": "text",
               "text": "3 / 7",
-              "size": "xxs",
+              "size": "xs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -548,7 +548,7 @@
                     {
                       "type": "text",
                       "text": "LINE 諮詢",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -588,7 +588,7 @@
                     {
                       "type": "text",
                       "text": "健康快篩",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -628,7 +628,7 @@
                     {
                       "type": "text",
                       "text": "打電話",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -675,7 +675,7 @@
                     {
                       "type": "text",
                       "text": "分享名片",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -739,7 +739,7 @@
             {
               "type": "text",
               "text": "13＋10 項評估・40 秒檢測",
-              "size": "xxs",
+              "size": "sm",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -761,7 +761,7 @@
             {
               "type": "text",
               "text": "4 / 7",
-              "size": "xxs",
+              "size": "xs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -787,7 +787,7 @@
                     {
                       "type": "text",
                       "text": "LINE 諮詢",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -827,7 +827,7 @@
                     {
                       "type": "text",
                       "text": "健康快篩",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -867,7 +867,7 @@
                     {
                       "type": "text",
                       "text": "打電話",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -914,7 +914,7 @@
                     {
                       "type": "text",
                       "text": "分享名片",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -978,7 +978,7 @@
             {
               "type": "text",
               "text": "健康不是買產品，是調整生活",
-              "size": "xxs",
+              "size": "sm",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -1000,7 +1000,7 @@
             {
               "type": "text",
               "text": "5 / 7",
-              "size": "xxs",
+              "size": "xs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -1026,7 +1026,7 @@
                     {
                       "type": "text",
                       "text": "LINE 諮詢",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1066,7 +1066,7 @@
                     {
                       "type": "text",
                       "text": "健康快篩",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1106,7 +1106,7 @@
                     {
                       "type": "text",
                       "text": "打電話",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1153,7 +1153,7 @@
                     {
                       "type": "text",
                       "text": "分享名片",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1217,7 +1217,7 @@
             {
               "type": "text",
               "text": "Life Renew 心煥營養團隊",
-              "size": "xxs",
+              "size": "sm",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -1239,7 +1239,7 @@
             {
               "type": "text",
               "text": "6 / 7",
-              "size": "xxs",
+              "size": "xs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -1265,7 +1265,7 @@
                     {
                       "type": "text",
                       "text": "LINE 諮詢",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1305,7 +1305,7 @@
                     {
                       "type": "text",
                       "text": "健康快篩",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1345,7 +1345,7 @@
                     {
                       "type": "text",
                       "text": "打電話",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1392,7 +1392,7 @@
                     {
                       "type": "text",
                       "text": "分享名片",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1456,7 +1456,7 @@
             {
               "type": "text",
               "text": "讓我們陪你走下一步",
-              "size": "xxs",
+              "size": "sm",
               "weight": "regular",
               "color": "#D8E5F6",
               "wrap": false,
@@ -1478,7 +1478,7 @@
             {
               "type": "text",
               "text": "7 / 7",
-              "size": "xxs",
+              "size": "xs",
               "weight": "regular",
               "color": "#5C7391",
               "wrap": false,
@@ -1504,7 +1504,7 @@
                     {
                       "type": "text",
                       "text": "LINE 諮詢",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1544,7 +1544,7 @@
                     {
                       "type": "text",
                       "text": "健康快篩",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1584,7 +1584,7 @@
                     {
                       "type": "text",
                       "text": "打電話",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
@@ -1631,7 +1631,7 @@
                     {
                       "type": "text",
                       "text": "分享名片",
-                      "size": "xxs",
+                      "size": "sm",
                       "weight": "bold",
                       "color": "#FFFFFF",
                       "wrap": true,
